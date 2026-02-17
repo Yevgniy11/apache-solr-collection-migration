@@ -1,0 +1,6 @@
+# Code Owners for apache-solr-collection-migration
+# These users are required reviewers for all pull requests.
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# All files require approval from the repository owner
+*   @Yevgniy11
