@@ -6,21 +6,7 @@ Solr Collection Migration Script
 Migrates documents from a source Solr collection to a destination Solr collection
 using cursor-based pagination for reliable, complete migration.
 
-Usage:
-    python migrate_solr_collection.py <source_url> <destination_url> [--batch-size N]
-
-Examples:
-    python migrate_solr_collection.py http://localhost:8983/solr/term_search/ http://localhost:8983/solr/term_search_new/
-    python migrate_solr_collection.py http://solr:8983/solr/old/ http://solr:8983/solr/new/ --batch-size 20000 --insecure
-
-Arguments:
-    source_url      Full URL to source collection (e.g. http://host:8983/solr/collection_name/)
-    destination_url Full URL to destination collection (same format)
-    --batch-size    Documents per fetch (default: 20000)
-    --resume        Continue from where a previous run left off (skips by max ID)
-    --reconcile     Find and re-index documents missing from destination (compares all IDs)
-    --no-commit     Do not issue explicit commit after each batch
-    --insecure      Disable SSL certificate verification (for self-signed certs)
+See README.md for full usage details and examples.
 """
 
 import argparse
